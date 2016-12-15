@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAPP.Home" Title="MS TechLogicsits"  BackgroundColor="#fff" Icon="logo.png">
+
+ 
+ <StackLayout>
+
+
+   
+   
+		<BoxView BackgroundColor="#44004400" HeightRequest="6"  />
+		<Grid HeightRequest="250" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="60" />
+			</Grid.RowDefinitions>
+
+			<Image Source="banner.png" Aspect="AspectFill"  HeightRequest="250" Grid.RowSpan="2"/>
+     
+			<BoxView BackgroundColor="#f44274" Grid.Row="1" />
+      <Image Source="logo.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1" HorizontalOptions="Start" />
+			<Label Text="Welcome to MS TechLogistics " TextColor="White" FontSize="28" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+		</Grid>
+   <Grid>
+     <Grid.ColumnDefinitions>
+       <ColumnDefinition Width="1*"></ColumnDefinition>
+       <ColumnDefinition Width="1*"></ColumnDefinition>
+      
+     </Grid.ColumnDefinitions>
+     <Grid.RowDefinitions>
+       <RowDefinition Height="200" />
+      
+   
+     </Grid.RowDefinitions>
+     <Grid BackgroundColor="Maroon" Grid.Column="0">
+       <Label Text="Technology " TextColor="White" FontSize="20" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+     </Grid>
+     <Grid BackgroundColor="Teal" Grid.Column="1">
+       <Label Text="Welcome to MS TechLogistics " TextColor="White" FontSize="20" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+     </Grid>
+   </Grid>
+
+   <Grid>
+     <Grid.ColumnDefinitions>
+       <ColumnDefinition Width="1*"></ColumnDefinition>
+       <ColumnDefinition Width="1*"></ColumnDefinition>
+
+     </Grid.ColumnDefinitions>
+     <Grid.RowDefinitions>
+       <RowDefinition Height="200" />
+
+
+     </Grid.RowDefinitions>
+     <Grid BackgroundColor="Green" Grid.Column="0">
+       <Label Text="Welcome to MS TechLogistics " TextColor="White" FontSize="20" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+     </Grid>
+     <Grid BackgroundColor="Black" Grid.Column="1">
+       <Label Text="Welcome to MS TechLogistics " TextColor="White" FontSize="20" FontAttributes="Bold"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+     </Grid>
+   </Grid>
+ </StackLayout>
+
+
+</ContentPage>

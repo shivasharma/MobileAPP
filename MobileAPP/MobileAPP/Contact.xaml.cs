@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace MobileAPP
 {
-    public partial class MainPage : MasterDetailPage
+    public partial class Contact : ContentPage
     {
-        public MainPage()
+        public Contact()
         {
             InitializeComponent();
-            this.Master = new Master();
-            this.Detail = new NavigationPage(new Home());
-            App.MasterDetail = this;
         }
     }
 }
