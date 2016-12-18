@@ -3,85 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileAPP.Home" Title="MS TechLogicsits"  BackgroundColor="#e4e9ee" Icon="logo.png">
 
- 
- <StackLayout>
+  <ScrollView>
+  <StackLayout>
+      <Grid HeightRequest="250" >
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
 
-   
-		<Grid HeightRequest="250" >
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*" />
-				<RowDefinition Height="60" />
-			</Grid.RowDefinitions>
+        <Image Source="banner.png" Aspect="AspectFill"  HeightRequest="250" Grid.RowSpan="2"/>
 
-			<Image Source="banner.png" Aspect="AspectFill"  HeightRequest="250" Grid.RowSpan="2"/>
-		     
-      <StackLayout >
-        <Image Source="logo.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1" HorizontalOptions="Center" />
-        <Label Text="MS TechLogistics " TextColor="White" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-        <Label Text="Innovate, Improve, Quality " TextColor="White" FontSize="15" FontAttributes="Italic" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
-    
-		</Grid>
-   <Grid>
-     <Grid.ColumnDefinitions>
-       <ColumnDefinition Width="1*"></ColumnDefinition>
-       <ColumnDefinition Width="1*"></ColumnDefinition>
-      
-     </Grid.ColumnDefinitions>
-     <Grid.RowDefinitions>
-       <RowDefinition Height="200" />
-      
-   
-     </Grid.RowDefinitions>
-     <Grid BackgroundColor="#fff" Grid.Column="0">
-       	
-         <StackLayout >
-      
-        <Label Text="Data  " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-             <Image Source="check.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
-        <Label Text="Data learning and analytics. " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
-       
-     </Grid>
-     <Grid BackgroundColor="#fff" Grid.Column="1">
-         <StackLayout >
-        
-        <Label Text="Security " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-           <Image Source="shield.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
-        <Label Text="Security you can trust " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
-     </Grid>
-   </Grid>
-
-   <Grid>
-     <Grid.ColumnDefinitions>
-       <ColumnDefinition Width="1*"></ColumnDefinition>
-       <ColumnDefinition Width="1*"></ColumnDefinition>
-
-     </Grid.ColumnDefinitions>
-     <Grid.RowDefinitions>
-       <RowDefinition Height="200" />
-
-
-     </Grid.RowDefinitions>
-     <Grid BackgroundColor="#fff" Grid.Column="0" >
-        <StackLayout>
-       
-        <Label Text="Innovation " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-           <Image Source="innovate.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
-        <Label Text="Fully powered innovation " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
-     </Grid>
-     <Grid BackgroundColor="#fff" Grid.Column="1">
         <StackLayout >
-        
-        <Label Text="Mobile" TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-          <Image Source="mobilet.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
-        <Label Text="Technology for future " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
-     </Grid>
-   </Grid>
- </StackLayout>
+          <Image Source="logo.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1" HorizontalOptions="Center" />
+          <Label Text="MS TechLogistics " TextColor="White" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          <Label Text="Innovate-Build-Improve " TextColor="White" FontSize="15" FontAttributes="Italic" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        </StackLayout>
 
+      </Grid>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="200" />
+
+
+        </Grid.RowDefinitions>
+        <Grid BackgroundColor="#fff" Grid.Column="0">
+
+          <StackLayout >
+
+            <Label Text="Data  " TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Image Source="check.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
+            <Label Text="Data learning and analytics. " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          </StackLayout>
+
+        </Grid>
+        <Grid BackgroundColor="#fff" Grid.Column="1">
+          <StackLayout >
+
+            <Label Text="Security " TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Image Source="shield.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
+            <Label Text="Security you can trust " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          </StackLayout>
+        </Grid>
+      </Grid>
+
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="200" />
+
+
+        </Grid.RowDefinitions>
+        <Grid BackgroundColor="#fff" Grid.Column="0" >
+          <StackLayout>
+
+            <Label Text="Innovation " TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Image Source="innovate.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
+            <Label Text="Fully powered innovation " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          </StackLayout>
+        </Grid>
+        <Grid BackgroundColor="#fff" Grid.Column="1">
+          <StackLayout >
+
+            <Label Text="Mobile" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <Image Source="mobilet.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
+            <Label Text="Technology for future " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          </StackLayout>
+        </Grid>
+      </Grid>
+
+  </StackLayout>
+  </ScrollView>
 
 </ContentPage>

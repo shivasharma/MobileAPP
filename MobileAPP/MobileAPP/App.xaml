@@ -32,13 +32,13 @@
       <Color x:Key="EntryBackgroundColor">#7778909c</Color>
 
       <Style x:Key="CardStyle" TargetType="Grid">
-        <Setter Property="HeightRequest" Value="200"/>
+        <Setter Property="HeightRequest" Value="300"/>
         <Setter Property="Padding" Value="5,10,0,10"/>
         <Setter Property="BackgroundColor" Value="{DynamicResource CardBackgroundColor}"/>
       </Style>
       
-       <Style x:Key="CardStyleService" TargetType="Grid">
-        <Setter Property="HeightRequest" Value="300"/>
+       <Style x:Key="CardStyleAbout" TargetType="Grid">
+        <Setter Property="HeightRequest" Value="200"/>
         <Setter Property="Padding" Value="5,10,0,10"/>
         <Setter Property="BackgroundColor" Value="{DynamicResource CardBackgroundColor}"/>
       </Style>
@@ -63,6 +63,7 @@
 
       <Style x:Key="DepartmentStyle" TargetType="Label">
         <Setter Property="FontSize" Value="15"/>
+        
         <Setter Property="TextColor" Value="{DynamicResource DepartmentColor}"/>
       </Style>
 

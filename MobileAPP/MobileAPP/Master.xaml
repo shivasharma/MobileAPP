@@ -10,7 +10,7 @@
       <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
         <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Black"/>
         <Label Text="MSTL" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White"/>
-        <Image Source="logo.png"  HorizontalOptions="Center"  WidthRequest="80" HeightRequest="80"/>
+        <Image Source="logo.png"  HorizontalOptions="Center"  WidthRequest="32" HeightRequest="32"/>
         <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
           <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
             <Button Image="home_icon.png" BorderColor="Black" BackgroundColor="Black" ></Button>

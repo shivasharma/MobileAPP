@@ -1,14 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAPP.Service" Title="Services">
+             x:Class="MobileAPP.Service" Title="Services" BackgroundColor="#e4e9ee">
 
   
   <ContentView.Content>
-
+    <ScrollView>
     <StackLayout Spacing="0" Padding="0">
+    
       <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
       <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="50"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Source="mobile.png"/>
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text=" Mobile Applications" Style="{DynamicResource NameStyle}"/>
+
+          <Label Text=" MS TechLogistics has hands on experience developing mobile application for IOS,
+                 Android, Windows and cross-platform development using IDEs and architecture that
+                 support high speed and real time data updates. Our experts use the best design patterns with very well documented code to keep things simple and efficient." Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+       
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+          <Image Grid.Column="0" Source="mobile.png"/>
+   
+        </StackLayout>
+       
+      </Grid>
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+
       <Grid Style="{DynamicResource CardStyle}">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="20"/>
@@ -18,48 +44,95 @@
 
        
         <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
-          <Label Text=" Mobile Applications" Style="{DynamicResource NameStyle}"/>
-          <Label Text=" MS TechLogistics has hands on experience developing mobile application for IOS,
-                 Android, Windows and cross-platform development using IDEs and architecture that
-                 support high speed and real time data updates. Our experts use the best design patterns
-                 with very well documented code to keep things simple and efficient." Style="{DynamicResource DepartmentStyle}"/>
-        </StackLayout>
-       
-        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
-          <Image Grid.Column="0" Source="battery.png"/>
-        
-        </StackLayout>
-        <Label Grid.Column="1" Text="[+]" Style="{DynamicResource MoreStyle}"/>
-      </Grid>
-
-      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
-      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
-
-      <Grid Style="{DynamicResource CardStyle}">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="90"/>
-          <ColumnDefinition Width="*"/>
-          <ColumnDefinition Width="5"/>
-        </Grid.ColumnDefinitions>
-
-        <Image Grid.Column="0" Source="vision.png"/>
-        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
-          <Label Text=" Our Vision" Style="{DynamicResource NameStyle}"/>
-          <Label Text=" Our vision is to constantly thrive to be the best at delivering our mission and also to be extremely flexible to the technological changes in the industry and keep up with most relevant technologies and architectures. Change is only thing that is constant and more rapid especially in the technology industry. Our promise is to provide you the solutions and support for these changing needs of industry using our expertise and experience to not only help you move forward but stay ahead." 
+          <Label Text=" Web Solutions" Style="{DynamicResource NameStyle}"/>
+          <Label Text=" MS TechLogistics has numerous client with various web development needs and web solutions to support many areas of business such as Human Resource, Labor Management and Finance." 
                  Style="{DynamicResource DepartmentStyle}"/>
         </StackLayout>
      
         <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
-          <Label Text="Followers" FontAttributes="Bold" Style="{DynamicResource SocialStyle}"/>
-         
-        </StackLayout>
-        <Label Grid.Column="1" Text="[+]" Style="{DynamicResource MoreStyle}"/>
-      </Grid>
 
+          <Image Grid.Column="0" Source="web.png"/>
+        </StackLayout>
+       
+      </Grid>
       <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
       <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
-    </StackLayout>
 
+
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="20"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text=" Big Data And Analytics" Style="{DynamicResource NameStyle}"/>
+          <Label Text="MS TechLogistics has very experienced personnel with detailed hands on experience for designing, developing, managing very large database on premise and on cloud supporting millions of transactions per day. We have created custom ETL (Extract, Transform and Load) template and design standards to support our client needs. It allows them to stabilize their database environment with improvement in data quality and data integrity."
+                 Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+
+          <Image Grid.Column="0" Source="bigdata.png"/>
+        </StackLayout>
+
+      </Grid>
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+
+
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="20"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text="Cloud Computing" Style="{DynamicResource NameStyle}"/>
+          <Label Text="MS TechLogistics offers cloud computing to our clients as per their need and create solutions using cloud computing to support latest technology trend and provide ability to scale on rapid rate. Secure data on cloud using Amazon AWS and Microsoft Windows Azure.Security that you can trust."
+                 Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+
+          <Image Grid.Column="0" Source="cloud.png"/>
+        </StackLayout>
+
+      </Grid>
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+
+
+
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="20"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text="Cyber Security" Style="{DynamicResource NameStyle}"/>
+          <Label Text="Cyber Security: MS TechLogistics has CompTIA certified resources for your cyber security needs in addition to general infrastructure and networking support that our industry expert can provide. We are also researching cyber security area for email security threats filtering and developing best practice minimize internal vulnerability of a system."
+                 Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+
+          <Image Grid.Column="0" Source="cyber.png"/>
+        </StackLayout>
+
+      </Grid>
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+
+      </StackLayout>
+    </ScrollView>
   </ContentView.Content>
   
 </ContentPage>
