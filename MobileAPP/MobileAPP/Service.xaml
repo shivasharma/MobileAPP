@@ -1,6 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAPP.Service">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="MobileAPP.Service" Title="Services">
+
+  
+  <ContentView.Content>
+
+    <StackLayout Spacing="0" Padding="0">
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="90"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Source="battery.png"/>
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text=" Our Mission" Style="{DynamicResource NameStyle}"/>
+          <Label Text=" Our mission is to simply design, create and improve solutions and provide services for satisfaction of our clients and people." Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+        <!--<StackLayout Grid.Column="1" Spacing="0" Padding="0" VerticalOptions="End">
+          <Label Text="City" Style="{DynamicResource LocationStyle}"/>
+        </StackLayout>-->
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+          <Label Text="Followers" FontAttributes="Bold" Style="{DynamicResource SocialStyle}"/>
+        
+        </StackLayout>
+        <Label Grid.Column="1" Text="[+]" Style="{DynamicResource MoreStyle}"/>
+      </Grid>
+
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+
+      <Grid Style="{DynamicResource CardStyle}">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="90"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Source="vision.png"/>
+        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+          <Label Text=" Our Vision" Style="{DynamicResource NameStyle}"/>
+          <Label Text=" Our vision is to constantly thrive to be the best at delivering our mission and also to be extremely flexible to the technological changes in the industry and keep up with most relevant technologies and architectures. Change is only thing that is constant and more rapid especially in the technology industry. Our promise is to provide you the solutions and support for these changing needs of industry using our expertise and experience to not only help you move forward but stay ahead." 
+                 Style="{DynamicResource DepartmentStyle}"/>
+        </StackLayout>
+        <!--<StackLayout Grid.Column="1" Spacing="0" Padding="0" VerticalOptions="End">
+          <Label Text="City" Style="{DynamicResource LocationStyle}"/>
+        </StackLayout>-->
+        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
+          <Label Text="Followers" FontAttributes="Bold" Style="{DynamicResource SocialStyle}"/>
+         
+        </StackLayout>
+        <Label Grid.Column="1" Text="[+]" Style="{DynamicResource MoreStyle}"/>
+      </Grid>
+
+      <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+      <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+    </StackLayout>
+
+  </ContentView.Content>
+  
 </ContentPage>
