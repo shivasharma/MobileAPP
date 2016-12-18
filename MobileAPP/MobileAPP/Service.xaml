@@ -11,21 +11,22 @@
       <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
       <Grid Style="{DynamicResource CardStyle}">
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="90"/>
+          <ColumnDefinition Width="20"/>
           <ColumnDefinition Width="*"/>
           <ColumnDefinition Width="5"/>
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Column="0" Source="battery.png"/>
+       
         <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
-          <Label Text=" Our Mission" Style="{DynamicResource NameStyle}"/>
-          <Label Text=" Our mission is to simply design, create and improve solutions and provide services for satisfaction of our clients and people." Style="{DynamicResource DepartmentStyle}"/>
+          <Label Text=" Mobile Applications" Style="{DynamicResource NameStyle}"/>
+          <Label Text=" MS TechLogistics has hands on experience developing mobile application for IOS,
+                 Android, Windows and cross-platform development using IDEs and architecture that
+                 support high speed and real time data updates. Our experts use the best design patterns
+                 with very well documented code to keep things simple and efficient." Style="{DynamicResource DepartmentStyle}"/>
         </StackLayout>
-        <!--<StackLayout Grid.Column="1" Spacing="0" Padding="0" VerticalOptions="End">
-          <Label Text="City" Style="{DynamicResource LocationStyle}"/>
-        </StackLayout>-->
+       
         <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
-          <Label Text="Followers" FontAttributes="Bold" Style="{DynamicResource SocialStyle}"/>
+          <Image Grid.Column="0" Source="battery.png"/>
         
         </StackLayout>
         <Label Grid.Column="1" Text="[+]" Style="{DynamicResource MoreStyle}"/>
@@ -47,9 +48,7 @@
           <Label Text=" Our vision is to constantly thrive to be the best at delivering our mission and also to be extremely flexible to the technological changes in the industry and keep up with most relevant technologies and architectures. Change is only thing that is constant and more rapid especially in the technology industry. Our promise is to provide you the solutions and support for these changing needs of industry using our expertise and experience to not only help you move forward but stay ahead." 
                  Style="{DynamicResource DepartmentStyle}"/>
         </StackLayout>
-        <!--<StackLayout Grid.Column="1" Spacing="0" Padding="0" VerticalOptions="End">
-          <Label Text="City" Style="{DynamicResource LocationStyle}"/>
-        </StackLayout>-->
+     
         <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" HorizontalOptions="End" Padding="0" VerticalOptions="End">
           <Label Text="Followers" FontAttributes="Bold" Style="{DynamicResource SocialStyle}"/>
          

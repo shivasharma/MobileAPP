@@ -37,7 +37,7 @@
        	
          <StackLayout >
       
-        <Label Text="Data Analytics " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+        <Label Text="Data  " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
              <Image Source="check.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
         <Label Text="Data learning and analytics. " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
       </StackLayout>
@@ -75,8 +75,8 @@
      <Grid BackgroundColor="#fff" Grid.Column="1">
         <StackLayout >
         
-        <Label Text="Mobile Technology " TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-          <Image Source="mobile-t.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
+        <Label Text="Mobile" TextColor="Black" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+          <Image Source="mobilet.png" Aspect="AspectFit" Grid.Row="1" HorizontalOptions="Center" />
         <Label Text="Technology for future " TextColor="Black" FontSize="15" FontAttributes="None" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
       </StackLayout>
      </Grid>
