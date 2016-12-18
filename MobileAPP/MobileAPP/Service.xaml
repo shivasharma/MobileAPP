@@ -17,7 +17,7 @@
           <ColumnDefinition Width="5"/>
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Column="0" Source="mobile.png"/>
+       
         <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
           <Label Text=" Mobile Applications" Style="{DynamicResource NameStyle}"/>
 
