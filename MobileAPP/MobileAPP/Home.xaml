@@ -80,19 +80,16 @@
           </controls:SwitchboradButton>
         </Grid>
       </Grid>
-    <BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-
-      <StackLayout>
+    <!--<BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>-->
+  
+      <StackLayout Padding="10,0,0,0" Margin="10">
+        <BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
       <Label x:Name="company" Text="MSTechlogistics.com © 2017" TextColor="#3A444D" FontSize="10" FontAttributes="None"  HorizontalTextAlignment="Center" VerticalOptions="Center" />
       <Label Text="Version 1.0 " TextColor="#3A444D" FontSize="8" FontAttributes="Italic"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
       </StackLayout>
-    <Grid BackgroundColor="#fff">
-    </Grid>
-  
-   
+ 
   </StackLayout>
  
-    
   </ScrollView>
 
 </ContentPage>

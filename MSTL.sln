@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP", "MobileAPP\MobileAPP\MobileAPP.csproj", "{D5C6263B-E2E4-4EAD-B9C3-3DB245F006DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL", "MobileAPP\MobileAPP\MSTL.csproj", "{D5C6263B-E2E4-4EAD-B9C3-3DB245F006DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP.Droid", "MobileAPP\MobileAPP.Droid\MobileAPP.Droid.csproj", "{439F654C-14CD-4084-B70F-8A1B5DBE2A57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL.Droid", "MobileAPP\MobileAPP.Droid\MSTL.Droid.csproj", "{439F654C-14CD-4084-B70F-8A1B5DBE2A57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP.iOS", "MobileAPP\MobileAPP.iOS\MobileAPP.iOS.csproj", "{87591F01-FC76-4932-9E7A-00C0B56DC0D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL.iOS", "MobileAPP\MobileAPP.iOS\MSTL.iOS.csproj", "{87591F01-FC76-4932-9E7A-00C0B56DC0D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP.WinPhone", "MobileAPP\MobileAPP.WinPhone\MobileAPP.WinPhone.csproj", "{C9DD8322-392F-4AB9-9055-3945E117BA8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL.WinPhone", "MobileAPP\MobileAPP.WinPhone\MSTL.WinPhone.csproj", "{C9DD8322-392F-4AB9-9055-3945E117BA8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP.UWP", "MobileAPP\MobileAPP.UWP\MobileAPP.UWP.csproj", "{BD98F30C-12FC-405B-AAED-403D236BC69B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL.UWP", "MobileAPP\MobileAPP.UWP\MSTL.UWP.csproj", "{BD98F30C-12FC-405B-AAED-403D236BC69B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileAPP.Windows", "MobileAPP\MobileAPP.Windows\MobileAPP.Windows.csproj", "{0BA80A0B-0537-4193-8E4F-001DB2CC4AB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTL.Windows", "MobileAPP\MobileAPP.Windows\MSTL.Windows.csproj", "{0BA80A0B-0537-4193-8E4F-001DB2CC4AB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
