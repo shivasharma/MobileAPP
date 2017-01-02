@@ -14,22 +14,22 @@ namespace MSTL
 
         public async void CameraButtonTapped(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new About());
+            await Navigation.PushAsync(new Service());
         }
 
         public async void TagButtonTapped(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new About());
+            await Navigation.PushAsync(new Service());
         }
 
         public async void ShoppingButtonTapped(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new About());
+            await Navigation.PushAsync(new Service());
         }
 
         public async void TwitterButtonTapped(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new About());
+            await Navigation.PushAsync(new Service());
         }
     }
 }
