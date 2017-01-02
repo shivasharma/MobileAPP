@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace MobileAPP
+namespace MSTL
 {
     public partial class App : Application
     {
@@ -19,7 +15,7 @@ namespace MobileAPP
         {
             InitializeComponent();
 
-            MainPage = new MobileAPP.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

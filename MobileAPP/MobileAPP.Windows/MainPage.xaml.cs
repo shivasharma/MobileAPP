@@ -21,7 +21,7 @@ namespace MobileAPP.Windows
         {
             this.InitializeComponent();
 
-            LoadApplication(new MobileAPP.App());
+            LoadApplication(new MSTL.App());
         }
     }
 }

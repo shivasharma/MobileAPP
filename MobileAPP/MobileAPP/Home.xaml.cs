@@ -1,18 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 
-namespace MobileAPP
+namespace MSTL
 {
     public partial class Home : ContentPage
     {
         public Home()
         {
             InitializeComponent();
+
+        }
+
+
+        public async void CameraButtonTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new About());
+        }
+
+        public async void TagButtonTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new About());
+        }
+
+        public async void ShoppingButtonTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new About());
+        }
+
+        public async void TwitterButtonTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new About());
         }
     }
 }

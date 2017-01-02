@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
-namespace MobileAPP
+namespace MSTL
 {
     public partial class MainPage : MasterDetailPage
     {
@@ -13,7 +8,7 @@ namespace MobileAPP
         {
             InitializeComponent();
             this.Master = new Master();
-            this.Detail = new NavigationPage(new Home());
+            this.Detail = new NavigationPage(new MSTL.Home());
             App.MasterDetail = this;
         }
     }

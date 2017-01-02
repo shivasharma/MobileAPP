@@ -28,7 +28,7 @@ namespace MobileAPP.WinPhone
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            LoadApplication(new MobileAPP.App());
+            LoadApplication(new MSTL.App());
         }
 
         /// <summary>

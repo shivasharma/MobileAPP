@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileAPP.Master" Title="Menu"  BackgroundColor="Black" Icon="menu.png">
+             x:Class="MSTL.Master" Title="Menu"  BackgroundColor="Black" Icon="menu.png">
 
 
   <StackLayout>
@@ -9,15 +9,17 @@
    
       <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
         <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Black"/>
-        <Label Text="MSTL" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White"/>
         <Image Source="logo.png"  HorizontalOptions="Center"  WidthRequest="32" HeightRequest="32"/>
+        <Label Text="MSTL" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White"/>
+        <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
         <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
           <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
             <Button Image="home_icon.png" BorderColor="Black" BackgroundColor="Black" ></Button>
             <Button x:Name="buttonHome" Text="HOME" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
           </StackLayout>
         </StackLayout>
-        <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
+        <!--<BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>-->
+        <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
       </StackLayout>
 
 
@@ -30,7 +32,7 @@
         <Button x:Name="buttonAbout" Text="ABOUT US" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
       </StackLayout>
     </StackLayout>
-    <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
+    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
   </StackLayout>
 
 
@@ -42,7 +44,7 @@
         <Button x:Name="buttonService" Text="SERVICES" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
       </StackLayout>
     </StackLayout>
-    <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
+    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
   </StackLayout>
 
   <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
@@ -52,7 +54,7 @@
         <Button x:Name="buttonContact" Text="CONTACT" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
       </StackLayout>
     </StackLayout>
-    <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
+    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
   </StackLayout>
 
 

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Xamarin.Forms;
 
-using Xamarin.Forms;
-
-namespace MobileAPP
+namespace MSTL
 {
     public partial class Master : ContentPage
     {
@@ -20,7 +14,7 @@ namespace MobileAPP
 
             buttonHome.Clicked += async (sender, e) =>
             {
-                await App.NavigationMasterDetail(new Home());
+                await App.NavigationMasterDetail(new MSTL.Home());
             };
             buttonService.Clicked += async (sender, e) =>
             {
@@ -28,7 +22,7 @@ namespace MobileAPP
             };
             buttonContact.Clicked += async (sender, e) =>
             {
-                await App.NavigationMasterDetail(new Contact());
+                await App.NavigationMasterDetail(new MSTL.Contact());
             };
         }
     }
