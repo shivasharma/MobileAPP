@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="MSTL.MSTL" android:versionCode="1" android:versionName="Beta">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="24" />
 	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
 	<uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="MSTL.Droid" android:theme="@style/MyTheme"></application>
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<application android:label="MSTL.Droid" android:theme="@style/MyTheme" android:icon="@drawable/icon"></application>
 </manifest>

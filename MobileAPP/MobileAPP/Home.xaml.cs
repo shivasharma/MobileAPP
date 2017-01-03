@@ -8,7 +8,6 @@ namespace MSTL
         public Home()
         {
             InitializeComponent();
-
         }
 
 

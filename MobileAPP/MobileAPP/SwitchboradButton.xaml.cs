@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace MSTL
 {
@@ -14,6 +8,7 @@ namespace MSTL
         {
             InitializeComponent();
         }
+
         public ImageSource Icon
         {
             get { return SwitchboardIcon.Source; }
@@ -25,6 +20,5 @@ namespace MSTL
             get { return SwitchboardLabel.Text; }
             set { SwitchboardLabel.Text = value; }
         }
-
     }
 }

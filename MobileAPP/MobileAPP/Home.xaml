@@ -1,95 +1,102 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MSTL.Home" Title="MS TechLogicsits"  BackgroundColor="#F1F2F2" Icon="logo.png"
+             x:Class="MSTL.Home" Title="MS TechLogicsits" BackgroundColor="#F1F2F2" Icon="logo.png"
              xmlns:controls="clr-namespace:MSTL;assembly=MSTL">
 
-  <ScrollView>
-  <StackLayout>
-      <Grid HeightRequest="250" >
-        <Grid.RowDefinitions>
-          <RowDefinition Height="*" />
-          <RowDefinition Height="60" />
-        </Grid.RowDefinitions>
+    <ScrollView>
+        <StackLayout>
+            <Grid HeightRequest="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
 
-        <Image Source="banner.png" Aspect="AspectFill"  HeightRequest="250" Grid.RowSpan="2"/>
+                <Image Source="banner.png" Aspect="AspectFill" HeightRequest="250" Grid.RowSpan="2" />
 
-        <StackLayout Grid.Row="0">
-          <Image Source="logo.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1" HorizontalOptions="Center" />
-          <Label Text="MS TechLogistics " TextColor="White" FontSize="30" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-          <Label Text="Innovate-Build-Improve " TextColor="White" FontSize="15" FontAttributes="Italic" Grid.Row="1"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                <StackLayout Grid.Row="0">
+                    <Image Source="logo.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1"
+                           HorizontalOptions="Center" />
+                    <Label Text="MS TechLogistics " TextColor="White" FontSize="30" FontAttributes="Bold" Grid.Row="1"
+                           HorizontalTextAlignment="Center" VerticalOptions="Center" />
+                    <Label Text="Innovate-Build-Improve " TextColor="White" FontSize="15" FontAttributes="Italic"
+                           Grid.Row="1" HorizontalTextAlignment="Center" VerticalOptions="Center" />
+                </StackLayout>
+
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+
+
+                </Grid.RowDefinitions>
+                <Grid BackgroundColor="#fff" Grid.Column="0">
+
+                    <controls:SwitchboradButton Grid.Column="0" Icon="check.png" Label="Data">
+                        <controls:SwitchboradButton.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TwitterButtonTapped" />
+                        </controls:SwitchboradButton.GestureRecognizers>
+                    </controls:SwitchboradButton>
+
+                </Grid>
+                <Grid BackgroundColor="#fff" Grid.Column="1">
+                    <controls:SwitchboradButton Grid.Column="0" Icon="shield.png" Label="Security">
+                        <controls:SwitchboradButton.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TwitterButtonTapped" />
+                        </controls:SwitchboradButton.GestureRecognizers>
+                    </controls:SwitchboradButton>
+
+                </Grid>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+
+
+                </Grid.RowDefinitions>
+
+                <Grid BackgroundColor="#fff" Grid.Column="0">
+                    <controls:SwitchboradButton Grid.Column="0" Icon="innovate.png" Label="Innovation">
+                        <controls:SwitchboradButton.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TwitterButtonTapped" />
+                        </controls:SwitchboradButton.GestureRecognizers>
+                    </controls:SwitchboradButton>
+                </Grid>
+
+                <Grid BackgroundColor="#fff" Grid.Column="1">
+
+                    <controls:SwitchboradButton Grid.Column="0" Icon="mobilet.png" Label="Mobile">
+                        <controls:SwitchboradButton.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TwitterButtonTapped" />
+                        </controls:SwitchboradButton.GestureRecognizers>
+                    </controls:SwitchboradButton>
+                </Grid>
+            </Grid>
+            <!--<BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>-->
+
+            <StackLayout Padding="10,0,0,0" Margin="10">
+                <BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                <Label x:Name="company" Text="MSTechlogistics.com © 2017" TextColor="#3A444D" FontSize="10"
+                       FontAttributes="None" HorizontalTextAlignment="Center" VerticalOptions="Center" />
+                <Label Text="Version 1.0 " TextColor="#3A444D" FontSize="8" FontAttributes="Italic"
+                       HorizontalTextAlignment="Center" VerticalOptions="Center" />
+            </StackLayout>
+
         </StackLayout>
 
-      </Grid>
-      <Grid>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="1*"></ColumnDefinition>
-          <ColumnDefinition Width="1*"></ColumnDefinition>
-
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="150" />
-
-
-        </Grid.RowDefinitions>
-        <Grid BackgroundColor="#fff" Grid.Column="0">
-    
-          <controls:SwitchboradButton Grid.Column="0" Icon="check.png" Label="Data">
-            <controls:SwitchboradButton.GestureRecognizers>
-              <TapGestureRecognizer Tapped="TwitterButtonTapped" />
-            </controls:SwitchboradButton.GestureRecognizers>
-          </controls:SwitchboradButton>
-
-        </Grid>
-        <Grid BackgroundColor="#fff" Grid.Column="1">
-         <controls:SwitchboradButton Grid.Column="0" Icon="shield.png" Label="Security">
-            <controls:SwitchboradButton.GestureRecognizers>
-              <TapGestureRecognizer Tapped="TwitterButtonTapped" />
-            </controls:SwitchboradButton.GestureRecognizers>
-          </controls:SwitchboradButton>
-          
-        </Grid>
-      </Grid>
-
-      <Grid>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="1*"></ColumnDefinition>
-          <ColumnDefinition Width="1*"></ColumnDefinition>
-
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="150" />
-
-
-        </Grid.RowDefinitions>
-        
-        <Grid BackgroundColor="#fff" Grid.Column="0" >
-         <controls:SwitchboradButton Grid.Column="0" Icon="innovate.png" Label="Innovation">
-            <controls:SwitchboradButton.GestureRecognizers>
-              <TapGestureRecognizer Tapped="TwitterButtonTapped" />
-            </controls:SwitchboradButton.GestureRecognizers>
-          </controls:SwitchboradButton>
-        </Grid>
-        
-        <Grid BackgroundColor="#fff" Grid.Column="1">
-     
-          <controls:SwitchboradButton Grid.Column="0" Icon="mobilet.png" Label="Mobile">
-            <controls:SwitchboradButton.GestureRecognizers>
-              <TapGestureRecognizer Tapped="TwitterButtonTapped" />
-            </controls:SwitchboradButton.GestureRecognizers>
-          </controls:SwitchboradButton>
-        </Grid>
-      </Grid>
-    <!--<BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>-->
-  
-      <StackLayout Padding="10,0,0,0" Margin="10">
-        <BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-      <Label x:Name="company" Text="MSTechlogistics.com © 2017" TextColor="#3A444D" FontSize="10" FontAttributes="None"  HorizontalTextAlignment="Center" VerticalOptions="Center" />
-      <Label Text="Version 1.0 " TextColor="#3A444D" FontSize="8" FontAttributes="Italic"  HorizontalTextAlignment="Center" VerticalOptions="Center"/>
-      </StackLayout>
- 
-  </StackLayout>
- 
-  </ScrollView>
+    </ScrollView>
 
 </ContentPage>

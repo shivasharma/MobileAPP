@@ -7,23 +7,11 @@ namespace MSTL
         public Master()
         {
             InitializeComponent();
-            buttonAbout.Clicked += async (sender, e) =>
-             {
-                 await App.NavigationMasterDetail(new About());
-             };
+            buttonAbout.Clicked += async (sender, e) => { await App.NavigationMasterDetail(new About()); };
 
-            buttonHome.Clicked += async (sender, e) =>
-            {
-                await App.NavigationMasterDetail(new MSTL.Home());
-            };
-            buttonService.Clicked += async (sender, e) =>
-            {
-                await App.NavigationMasterDetail(new Service());
-            };
-            buttonContact.Clicked += async (sender, e) =>
-            {
-                await App.NavigationMasterDetail(new MSTL.Contact());
-            };
+            buttonHome.Clicked += async (sender, e) => { await App.NavigationMasterDetail(new Home()); };
+            buttonService.Clicked += async (sender, e) => { await App.NavigationMasterDetail(new Service()); };
+            buttonContact.Clicked += async (sender, e) => { await App.NavigationMasterDetail(new Contact()); };
         }
     }
 }

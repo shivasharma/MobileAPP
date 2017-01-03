@@ -7,8 +7,8 @@ namespace MSTL
         public MainPage()
         {
             InitializeComponent();
-            this.Master = new Master();
-            this.Detail = new NavigationPage(new MSTL.Home());
+            Master = new Master();
+            Detail = new NavigationPage(new Home());
             App.MasterDetail = this;
         }
     }

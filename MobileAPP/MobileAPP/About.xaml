@@ -1,73 +1,76 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MSTL.About"  Title="About Us" BackgroundColor="#F1F2F2" Icon="about.png">
-<ScrollView>
-  <Grid RowSpacing="0">
-    <Grid.RowDefinitions>
-      <RowDefinition Height="50" />
-      <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
+             x:Class="MSTL.About" Title="About Us" BackgroundColor="#F1F2F2" Icon="about.png">
+    <ScrollView>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-    <!--  background colors  -->
-    <BoxView Grid.Row="0" Color="#3A444D" />
-    <BoxView Grid.Row="1" Color="#F1F2F2" />
+            <!--  background colors  -->
+            <BoxView Grid.Row="0" Color="#3A444D" />
+            <BoxView Grid.Row="1" Color="#F1F2F2" />
 
-    <!--  header content  -->
-    <ContentView Grid.Row="0" HorizontalOptions="StartAndExpand" Padding="10" VerticalOptions="CenterAndExpand">
-      <StackLayout Orientation="Horizontal">
-        <Image Source="about.png" />
-        <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="ABOUT US"
-               TextColor="White" VerticalOptions="StartAndExpand" />
-      </StackLayout>
-    </ContentView>
+            <!--  header content  -->
+            <ContentView Grid.Row="0" HorizontalOptions="StartAndExpand" Padding="10" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="about.png" />
+                    <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="ABOUT US"
+                           TextColor="White" VerticalOptions="StartAndExpand" />
+                </StackLayout>
+            </ContentView>
 
-  
-    <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10" VerticalOptions="StartAndExpand">
 
-      <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="Our Mission"
-             TextColor="Black" VerticalOptions="StartAndExpand" />
-      <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
+            <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10"
+                         VerticalOptions="StartAndExpand">
 
-    
-        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="150"  Padding="10">
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-          </Grid.ColumnDefinitions>
-          <Label Grid.Column="0" Grid.Row="0"
-                 Text="Our mission is to simply design, create and improve solutions and provide services for satisfaction of our clients and people."
-          FontSize="14"  TextColor="Black" Margin="10"/>
+                <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="Our Mission"
+                       TextColor="Black" VerticalOptions="StartAndExpand" />
+                <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
 
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="150" Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"
+                           Text="Our mission is to simply design, create and improve solutions and provide services for satisfaction of our clients and people."
+                           FontSize="14" TextColor="Black" Margin="10" />
+
+
+                </Grid>
+
+
+                <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="Our Vision"
+                       TextColor="Black" VerticalOptions="StartAndExpand" />
+                <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="150" Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"
+                           Text="Our vision is to constantly thrive to be the best at delivering our mission and also to be extremely flexible to the technological changes in the industry and keep up with most relevant technologies and architectures. Change is only thing that is constant and more rapid especially in the technology industry. Our promise is to provide you the solutions and support for these changing needs of industry using our expertise and experience to not only help you move forward but stay ahead."
+                           FontSize="14" Margin="10,10,10,10" TextColor="Black" />
+
+
+                </Grid>
+            </StackLayout>
+
+
+            <!--  Page Content  -->
 
         </Grid>
-     
-
-      <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="Our Vision"
-                TextColor="Black" VerticalOptions="StartAndExpand" />
-      <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-
-      <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="150" Padding="10">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto"></ColumnDefinition>
-          <ColumnDefinition Width="Auto"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Column="0" Grid.Row="0"
-               Text="Our vision is to constantly thrive to be the best at delivering our mission and also to be extremely flexible to the technological changes in the industry and keep up with most relevant technologies and architectures. Change is only thing that is constant and more rapid especially in the technology industry. Our promise is to provide you the solutions and support for these changing needs of industry using our expertise and experience to not only help you move forward but stay ahead."
-        FontSize="14" Margin="10,10,10,10"  TextColor="Black"/>
 
 
-      </Grid>
-    </StackLayout>
-
-
-
-    <!--  Page Content  -->
-
-  </Grid>
-
-
-</ScrollView>
+    </ScrollView>
 
 
 </ContentPage>

@@ -1,9 +1,6 @@
 ﻿using System;
-using MimeKit;
 using Plugin.Messaging;
 using Xamarin.Forms;
-
-using MailKit.Net.Smtp;
 
 namespace MSTL
 {
@@ -16,8 +13,6 @@ namespace MSTL
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-
-
             //var message = new MimeMessage();
 
             // message.From.Add (new MailboxAddress (name.Text, email.Text));
@@ -48,25 +43,18 @@ namespace MSTL
 
             try
             {
-             var emailTask = MessagingPlugin.EmailMessenger;
-             var email = new EmailMessageBuilder()
-            .To("info@mstl.us")
-            .Subject("Contact Us from mobile")
-            .Body(message.Text)
-            .Build();
-             emailTask.SendEmail(email);
-
-
+                var emailTask = MessagingPlugin.EmailMessenger;
+                var email = new EmailMessageBuilder()
+                    .To("info@mstl.us")
+                    .Subject("Contact Us from mobile")
+                    .Body(message.Text)
+                    .Build();
+                emailTask.SendEmail(email);
             }
 
             catch (Exception ex)
             {
-
             }
-
-
         }
-
-
     }
 }

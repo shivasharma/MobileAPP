@@ -1,69 +1,77 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MSTL.Master" Title="Menu"  BackgroundColor="Black" Icon="menu.png">
+             x:Class="MSTL.Master" Title="Menu" BackgroundColor="Black" Icon="menu.png">
 
 
-  <StackLayout>
+    <StackLayout>
 
-   
-      <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
-        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Black"/>
-        <Image Source="logo.png"  HorizontalOptions="Center"  WidthRequest="32" HeightRequest="32"/>
-        <Label Text="MSTL" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White"/>
-        <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-        <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
-          <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
-            <Button Image="home_icon.png" BorderColor="Black" BackgroundColor="Black" ></Button>
-            <Button x:Name="buttonHome" Text="HOME" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
-          </StackLayout>
+
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Black" />
+            <Image Source="logo.png" HorizontalOptions="Center" WidthRequest="32" HeightRequest="32" />
+            <Label Text="MSTL" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                   TextColor="White" />
+            <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
+                <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button Image="home_icon.png" BorderColor="Black" BackgroundColor="Black" />
+                    <Button x:Name="buttonHome" Text="HOME" TextColor="White" BorderRadius="30" FontAttributes="Bold"
+                            BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+            <!--<BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>-->
+            <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
         </StackLayout>
-        <!--<BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>-->
-        <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-      </StackLayout>
 
 
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
+                <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button Image="about.png" BorderColor="Black" BackgroundColor="Black" />
+                    <Button x:Name="buttonAbout" Text="ABOUT US" TextColor="White" BorderRadius="30"
+                            FontAttributes="Bold" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
 
 
-  <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
-       <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
-      <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
-        <Button Image="about.png" BorderColor="Black" BackgroundColor="Black" ></Button>
-        <Button x:Name="buttonAbout" Text="ABOUT US" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
-      </StackLayout>
-    </StackLayout>
-    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-  </StackLayout>
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
+                <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button Image="service.png" BorderColor="Black" BackgroundColor="Black" />
+                    <Button x:Name="buttonService" Text="SERVICES" TextColor="White" BorderRadius="30"
+                            FontAttributes="Bold" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
+                <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button Image="contact.png" BorderColor="Black" BackgroundColor="Black" />
+                    <Button x:Name="buttonContact" Text="CONTACT" TextColor="White" BorderRadius="30"
+                            FontAttributes="Bold" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+            <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
 
 
-
-  <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
-    <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
-      <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
-        <Button Image="service.png" BorderColor="Black" BackgroundColor="Black" ></Button>
-        <Button x:Name="buttonService" Text="SERVICES" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
-      </StackLayout>
-    </StackLayout>
-    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-  </StackLayout>
-
-  <StackLayout Spacing="0" Padding="0" BackgroundColor="Black">
-    <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="Black" Padding="5">
-      <StackLayout Spacing="0" BackgroundColor="Black" Orientation="Horizontal" HorizontalOptions="Start">
-        <Button Image="contact.png" BorderColor="Black" BackgroundColor="Black" ></Button>
-        <Button x:Name="buttonContact" Text="CONTACT" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
-      </StackLayout>
-    </StackLayout>
-    <BoxView BackgroundColor="#e91e63" HeightRequest="2" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand"></BoxView>
-  </StackLayout>
-
-
-  <!--<Button x:Name="buttonAbout" Text="ABOUT US" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
+        <!--<Button x:Name="buttonAbout" Text="ABOUT US" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
       <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
       <Button x:Name="buttonService" Text="SERVICES" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>
       <BoxView Color="White" WidthRequest="200" HeightRequest="2" HorizontalOptions="CenterAndExpand"/>
       <Button x:Name="buttonContact" Text="CONTACT" TextColor="White" BorderRadius="30" FontAttributes="Bold"  BackgroundColor="Black"/>-->
-  </StackLayout>
-  
-  
+    </StackLayout>
+
+
 </ContentPage>

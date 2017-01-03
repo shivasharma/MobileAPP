@@ -5,17 +5,19 @@ namespace MSTL
 {
     public partial class App : Application
     {
-        public static MasterDetailPage MasterDetail { get; set; }
-        public static async Task NavigationMasterDetail(Page page)
-        {
-            App.MasterDetail.IsPresented = false;
-            await App.MasterDetail.Detail.Navigation.PushAsync(page);
-        }
         public App()
         {
             InitializeComponent();
 
             MainPage = new MainPage();
+        }
+
+        public static MasterDetailPage MasterDetail { get; set; }
+
+        public static async Task NavigationMasterDetail(Page page)
+        {
+            MasterDetail.IsPresented = false;
+            await MasterDetail.Detail.Navigation.PushAsync(page);
         }
 
         protected override void OnStart()
