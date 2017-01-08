@@ -3,134 +3,144 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MSTL.Contact" Title="Contact Us" BackgroundColor="#e4e9ee" Icon="logo.png">
+  <ScrollView>
+    <Grid RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
 
-    <ScrollView>
-        <Grid RowSpacing="0">
+      <!--  background colors  -->
+      <BoxView Grid.Row="0" Color="#3A444D" />
+      <BoxView Grid.Row="1" Color="#F1F2F2" />
+
+      <!--  header content  -->
+      <ContentView Grid.Row="0" HorizontalOptions="StartAndExpand" Padding="10" VerticalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal">
+          <Image Source="contact.png" />
+          <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="CONTACT US"
+                 TextColor="White" VerticalOptions="StartAndExpand" />
+        </StackLayout>
+      </ContentView>
+
+
+      <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10"
+                   VerticalOptions="StartAndExpand">
+
+
+        <Image  Source="logoblack.png" WidthRequest="50" HeightRequest="50" />
+
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120" Padding="5">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="40" />
+              <ColumnDefinition Width="Auto" />
+
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
+            <Grid BackgroundColor="#fff" Grid.Column="0">
+              <BoxView BackgroundColor="#e91e63" HeightRequest="1" VerticalOptions="Fill"  HorizontalOptions="FillAndExpand"></BoxView>
+             
+            </Grid>
+            <Grid BackgroundColor="#fff" Grid.Column="1">
+           
+              <Label Grid.Column="0" Grid.Row="0" Text="MS TechLogistics." FontSize="14" TextColor="Black" />
+              <Label Grid.Column="0" Grid.Row="1" Text="1164 Balsam Cir Sykesville, MD 21784 USA " FontSize="14" TextColor="Black" />
+              <Label Grid.Column="0" Grid.Row="2" Text="443-300-MSTL(6785)" FontSize="14" TextColor="Blue" />
+              <Label Grid.Column="0" Grid.Row="3" Text="info@mstechlogistics.com" FontSize="14" TextColor="Blue" />
+              <Label Grid.Column="0" Grid.Row="4" Text="mstechlogistics.com" FontSize="14" TextColor="Blue" />
+            </Grid>
 
-            <!--  background colors  -->
-            <BoxView Grid.Row="0" Color="#3A444D" />
-            <BoxView Grid.Row="1" Color="#F1F2F2" />
+          </Grid>
+        </Grid>
 
-            <!--  header content  -->
-            <ContentView Grid.Row="0" HorizontalOptions="StartAndExpand" Padding="10" VerticalOptions="CenterAndExpand">
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="contact.png" />
-                    <Label FontSize="Large" HorizontalOptions="StartAndExpand" Text="CONTACT US"
-                           TextColor="White" VerticalOptions="StartAndExpand" />
-                </StackLayout>
-            </ContentView>
+      
+        
+        
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <Grid BackgroundColor="#fff" Grid.Column="1">
+              <Entry x:Name="Ename" Placeholder="Name" Grid.Row="0" Grid.Column="0"
+                    FontSize="14" Margin="10,10,10,10" TextColor="Black"
+                     WidthRequest="200" />
+            </Grid>
 
-
-            <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="StartAndExpand" Padding="10"
-                         VerticalOptions="StartAndExpand">
-                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Grid BackgroundColor="#fff" Grid.Column="1">
-                            <Entry x:Name="name" Placeholder="Name" Grid.Row="0" Grid.Column="0"
-                                   BackgroundColor="#3A444D" FontSize="14" Margin="10,10,10,10" TextColor="White"
-                                   WidthRequest="200" />
-                        </Grid>
-
-                    </Grid>
-                </Grid>
-
-
-                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Grid BackgroundColor="#fff" Grid.Column="1">
-                            <Entry x:Name="email" Placeholder="Email" Grid.Row="0" Grid.Column="0"
-                                   BackgroundColor="#3A444D" FontSize="14" Margin="10,10,10,10" TextColor="White"
-                                   WidthRequest="200" />
-                        </Grid>
-
-                    </Grid>
-                </Grid>
-
-
-                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Grid BackgroundColor="#fff" Grid.Column="1">
-                            <Entry x:Name="message" Placeholder="Message" Grid.Row="0" Grid.Column="0"
-                                   BackgroundColor="#3A444D" FontSize="14" Margin="10,10,10,10" TextColor="White"
-                                   WidthRequest="200" HeightRequest="200" />
-                        </Grid>
-
-                    </Grid>
-                </Grid>
-
-                <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Grid BackgroundColor="#fff" Grid.Column="1">
-                            <Button Text="Send" Grid.Column="0" Grid.Row="0" TextColor="White"
-                                    BackgroundColor="#e91e63" Clicked="Button_OnClicked" />
-                        </Grid>
-
-                    </Grid>
-                </Grid>
-            </StackLayout>
-
-
-            <!--  Page Content  -->
-
+          </Grid>
         </Grid>
 
 
-    </ScrollView>
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="#fff" Grid.Column="1">
+             
+              <Entry x:Name="Eemail" Placeholder="Email" Grid.Row="0" Grid.Column="0"
+                     FontSize="14" Margin="10,10,10,10" TextColor="Black"
+                     WidthRequest="200" />
+            </Grid>
+
+          </Grid>
+        </Grid>
 
 
-    <!--<Grid>
-      
-      <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="Auto"/>
-      </Grid.RowDefinitions>
-      
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="100"/>
-        <ColumnDefinition Width="*"/>
-      </Grid.ColumnDefinitions>
-      <Image Source="logo.png" HeightRequest="100" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Image>
-      <Label Text="Name" Grid.Row="1" Grid.Column="0"></Label>
-      <Entry Placeholder="name" Grid.Row="1" Grid.Column="1"></Entry>
-    </Grid>-->
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="#fff" Grid.Column="1">
+              <Entry x:Name="Emessage" Placeholder="Message" Grid.Row="0" Grid.Column="0"
+                      FontSize="14" Margin="10,10,10,10" TextColor="Black"
+                     WidthRequest="200" HeightRequest="200" />
+            </Grid>
+
+          </Grid>
+        </Grid>
+
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="5">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid BackgroundColor="#fff" Grid.Column="1">
+              <Button Text="Send" Grid.Column="0" Grid.Row="0" TextColor="White"
+                      BackgroundColor="#e91e63" Clicked="Button_OnClicked" />
+            </Grid>
+
+          </Grid>
+        </Grid>
+      </StackLayout>
 
 
+      <!--  Page Content  -->
+
+    </Grid>
+
+
+  </ScrollView>
 </ContentPage>

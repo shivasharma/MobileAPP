@@ -1,4 +1,6 @@
 ﻿using System;
+using MSTL.Model;
+using MSTL.Services;
 using Plugin.Messaging;
 using Xamarin.Forms;
 
@@ -11,49 +13,40 @@ namespace MSTL
             InitializeComponent();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        public ContactInfo contactinfo { get; set; } = new ContactInfo();
+
+        private async void Button_OnClicked(object sender, EventArgs e)
         {
-            //var message = new MimeMessage();
-
-            // message.From.Add (new MailboxAddress (name.Text, email.Text));
-            //message.To.Add (new MailboxAddress ("MSTL", "info@mstl.us"));
-            //message.Subject = "Email from MSLT mobile APP?";
-
-            //message.Body = new TextPart("plain")
-            //{
-            //    Text = message.TextBody
-
-            //};
-            //using (var client = new SmtpClient())
-            //{
-            //    client.Connect("smtp.google.com", 587, false);
-
-            //    // Note: since we don't have an OAuth2 token, disable
-            //    // the XOAUTH2 authentication mechanism.
-            //    client.AuthenticationMechanisms.Remove("XOAUTH2");
-
-            //    // Note: only needed if the SMTP server requires authentication
-            //    client.Authenticate("joey", "password");
-
-            //    client.Send(message);
-            //    client.Disconnect(true);
-            //}
-            // var emailMessage = CrossMessaging.Current.EmailMessenger;
+            var name = Ename.Text;
+            var email = Eemail.Text;
+            var message = Emessage.Text;
 
 
-            try
+            if (name == null || email == null || message == null)
             {
-                var emailTask = MessagingPlugin.EmailMessenger;
-                var email = new EmailMessageBuilder()
-                    .To("info@mstl.us")
-                    .Subject("Contact Us from mobile")
-                    .Body(message.Text)
-                    .Build();
-                emailTask.SendEmail(email);
+                await DisplayAlert("Message", "Please enter name, email and messsage.", "OK");
             }
-
-            catch (Exception ex)
+            else
             {
+                contactinfo.Name = name;
+                contactinfo.Email = email;
+                contactinfo.Message = message;
+
+                var contact = new AppService();
+
+                var status = await contact.SendEmail(contactinfo);
+
+                if (status == "message sent")
+                {
+                    await DisplayAlert("Alert", "Message Sent Successfully.", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Alert", "Message Failed. Please Try Again Later", "OK");
+                    Ename.Text = string.Empty;
+                    Eemail.Text = string.Empty;
+                    Emessage.Text = string.Empty;
+                }
             }
         }
     }
