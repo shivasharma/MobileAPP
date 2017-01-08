@@ -5,7 +5,10 @@ using MSTL.Droid;
 
 namespace MobileAPP.Droid
 {
-    [Activity(Label = "MSTL", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    //[Activity(Label = "MSTL", Icon = "@drawable/icon", Theme = "@style/MyTheme",
+    //    MainLauncher = false,
+    //    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity()]
     public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
